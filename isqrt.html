@@ -9,7 +9,9 @@
 
    let numero = document.getElementById("numberBox").innerHTML;
 
-   if(!(Number.isNan(1/numero))  ){  document.getElementById("answerBox").innerHTML = Math.floor(Math.sqrt(numero));    }else{ document.getElementById("numberBox").innerHTML = "";     alert("THAT IS NOT A NUMBER, IDIOT");}
+   //if(!(Number.isNan(1/numero))  ){  document.getElementById("answerBox").innerHTML = Math.floor(Math.sqrt(numero));    }else{ document.getElementById("numberBox").innerHTML = "";     alert("THAT IS NOT A NUMBER, IDIOT");}
+
+   document.getElementById("answerBox").innerHTML = numero;
    
   }
   
