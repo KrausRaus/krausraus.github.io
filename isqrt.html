@@ -9,7 +9,7 @@
 
    let numero = document.getElementById("numberBox").innerHTML;
 
-   if(1/numero != NaN  ){  document.getElementById("answerBox").innerHTML = numero**.5|0;    }else{ document.getElementById("numberBox").innerHTML = "";     alert("THAT IS NOT A NUMBER, IDIOT");}
+   if(1/numero ){  document.getElementById("answerBox").innerHTML = (numero**.5|0);    }else{ document.getElementById("numberBox").innerHTML = "";     alert("THAT IS NOT A NUMBER, IDIOT");}
    
   }
   
