@@ -9,7 +9,7 @@
 
   let numero = document.getElementById("numberBox").value;
 
-  if( numero < 0 || numero == "NaN" || numero == "Infinity"  )window.location.href = "https://krausraus.github.io/no.html";
+  if( numero < 0 || numero == "NaN" || numero == "Infinity"  ){window.location.href = "https://krausraus.github.io/no.html"; return false;}
    
 
    if(!(Number.isNaN(1/numero))  ){  document.getElementById("answerBox").innerHTML = Math.floor(Math.sqrt(Math.floor(numero)));    }else{  alert("THAT IS NOT A NUMBER, IDIOT");}
