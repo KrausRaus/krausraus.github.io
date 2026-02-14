@@ -12,7 +12,7 @@
   if( numero < 0 || numero == "NaN" || numero == "Infinity"  )window.location.href = "https://krausraus.github.io/no.html";
    
 
-   if(!(Number.isNaN(1/numero))  ){  document.getElementById("answerBox").innerHTML = Math.floor(Math.sqrt(numero));    }else{  alert("THAT IS NOT A NUMBER, IDIOT");}
+   if(!(Number.isNaN(1/numero))  ){  document.getElementById("answerBox").innerHTML = Math.floor(Math.sqrt(Math.floor(numero)));    }else{  alert("THAT IS NOT A NUMBER, IDIOT");}
 
 
    
